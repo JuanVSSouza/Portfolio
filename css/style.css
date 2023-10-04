@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&family=Roboto:wght@300;500&display=swap');
+
+
+:root{
+    --cor-fundo: #212121;
+    --cor-fundo-dois: #1a1a1a;
+
+    --cor-texto: #eeeeee;
+    --cor-link-hover: #1a1a1a;
+    --cor-negrito: #177bb4;
+    
+    --cor-sombra: #00000077;
+
+    --fonte-nome:'Roboto', sans-serif;
+    --fonte-texto:'Montserrat', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: var(--cor-fundo);
+    color: var(--cor-texto);
+    font-family: var(--fonte-texto);
+}
+
+strong{
+    color: var(--cor-negrito);
+}
+
+.cabecalho{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.cabecalho__perfil{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    left: 5%;
+    padding-top: 1em;
+}
+
+.cabecalho__links{
+    display: flex;
+    position: relative;
+    left: 30%;
+    bottom: 60px;
+}
+
+.links__redes{
+    display: flex;
+    align-items: center;
+}
+
+.link__linkedin, .link__github{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1em;
+    font-size: 15px;
+    text-decoration: none;
+    text-shadow: 3px 1px 2px var(--cor-sombra);
+    color: var(--cor-texto);
+}
+
+
+.link__linkedin:hover, .link__github:hover{
+    text-shadow: none;
+    font-size: 14.9px;
+    margin: 1.01em;
+}
+
+.divPerfil{
+    display: flex;
+    align-items: center;
+}
+
+.fotoPerfil{
+    background-color: var(--cor-negrito);
+    padding: 1.5px;
+    border-radius: 5em;
+}
+
+.nome{
+    font-size: 30px;
+    font-family: var(--fonte-nome);
+    margin: 3px 0 1em 0;
+}
+
+.corpo{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* flex-wrap: wrap; */
+}
+
+.sobreMim__titulo{
+    padding-bottom: 0.5em;
+}
+
+.sobreMim{
+    background-color: var(--cor-fundo-dois);
+    padding: 1em 1em;
+    margin: 0 5em;
+    box-shadow: 3px 3px 10px var(--cor-sombra);
+}
+
+.sobreMim:hover{
+    box-shadow: none;
+    background-color: var(--cor-fundo);
+    transition: 1s;
+}
+
+.sobreMim:not(:hover){
+    background-color: var(--cor-fundo-dois);
+    padding: 1em 1em;
+    margin: 0 5em;
+    box-shadow: 3px 3px 10px var(--cor-sombra);
+    transition: 1s;
+}
+
+.sobreMim__titulo:hover, .sobreMim__texto:hover{
+    text-shadow: 3px 3px 5px black;
+    transition: 1.5s;
+}
+
+.sobreMim__titulo:not(:hover), .sobreMim__texto:not(:hover){
+    text-shadow: none;
+    transition: 1s;
+}
+
+.TcLg{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* background-color: var(--cor-fundo-dois); */
+    margin: 0.5em 1em  2em 1px;
+    padding: 1em 1em 0 0;
+    /* box-shadow: 3px 3px 10px var(--cor-sombra);*/
+}
+
+.TcLg__titulo{
+    margin: 1em;
+}
+
+.imgTcLg{
+    display: flex;
+    align-content: space-between;
+}
+
+.imagem{
+    margin: 0.3em;
+}
+
+.rodape{
+    background-color: var(--cor-fundo-dois);
+}
+
+.rodape__tec{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
