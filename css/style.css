@@ -86,6 +86,7 @@ strong{
     background-color: var(--cor-negrito);
     padding: 1.5px;
     border-radius: 5em;
+    justify-content: center;
 }
 
 .nome{
