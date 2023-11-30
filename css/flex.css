@@ -1,0 +1,77 @@
+@media (max-width: 425px){
+
+    .cabecalho__perfil{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: static;
+        margin: 0;
+    }
+    
+    .fotoPerfil:not(:hover){
+        height: 100px;
+        width: 100px;
+        transition: 0.1s;
+    }
+
+    .fotoPerfil:hover{
+        padding: 0;
+        height: 110px;
+        width: 110px;
+        transition: .1s;
+    }
+        
+    .cabecalho__links{
+        display: flex;
+        justify-content: center;
+        position: static;
+        width: 100vw;
+        background-color: rgb(19, 19, 19);
+    }
+
+    .link__linkedin, .link__github{
+        font-size: .4em;
+    }
+
+    .link__linkedin img, .link__github img{
+        width: 8em;
+    }
+
+    .nome{
+        font-size: 1.2em;
+    }
+
+    .corpo{
+        align-items: center;
+    }
+
+    .sobreMim{
+        font-size: .8em;
+        width: 60vw;
+    }
+
+    .tecnologias{
+        margin: 0;
+        padding: 1em;
+    }
+    
+    .tecnologias__titulo{
+        font-size: .8em;
+    }
+
+    .tecnologias img{
+        width: 3em;
+    }
+
+    .rodape{
+        width: 100vw;
+        position: relative;
+        bottom: 0;
+
+    }
+
+    .rodape__contate__botao{
+        font-size: 15px;
+    }
+}
