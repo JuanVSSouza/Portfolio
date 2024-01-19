@@ -247,9 +247,9 @@ a{
     justify-content: center;
 }
 
-/* .contato{
+.contato{
     display: flex;
-} */
+}
 
 .contato__assunto, .contato__desc, .contato__email{
     padding: .8em;
