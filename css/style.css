@@ -209,11 +209,72 @@ a{
 
 .rodape__contate__botao:hover{
     background-color: var(--cor-btn-hover);
+    cursor: pointer;
 }
 
 .rodape__contate__botao:active {
     background-color: var(--cor-btn-click);
     color: var(--cor-negrito);
     box-shadow: none;
-    margin-left: .4em;
+    margin: .4em;
+}
+
+#fecharContateBtn{
+    display: none;
+}
+
+.rodape__contate{
+    display: none;
+}
+
+/* .rodape__esconde__botao{
+    border: none;
+    border-radius: 2em;
+    font-size: 2em;
+    padding: 2em;
+    background-color: var(--cor-btn);
+} */
+
+.form__contato{
+    display: flex;
+    justify-content: space-around;
+    width: 75vw;
+}
+
+.div__contato, .div__contatos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* .contato{
+    display: flex;
+} */
+
+.contato__assunto, .contato__desc, .contato__email{
+    padding: .8em;
+    border: none;
+    border-radius: .5em;
+    font-size: 18px;
+    margin: .3em;
+}
+
+.contato__botao{
+    padding: .8em;
+    border: none;
+    border-radius: .5em;
+    font-size: 18px;
+    margin: .3em;
+    width: 100px;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.contato__botao:hover{
+    box-shadow: 5px 5px 5px black;
+    transition: .5s;
+}
+
+.contato__botao:active{
+    box-shadow: none;
 }

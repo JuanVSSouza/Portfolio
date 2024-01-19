@@ -39,7 +39,7 @@
         <section class="sobreMim">
             <h2 class="sobreMim__titulo">Sobre Mim</h2>
                 <p class="sobreMim__texto">
-                    Prazer, me chamo Juan Souza e sou um <strong>Desenvolvedor Front-end</strong>. Atualmente sou graduando em <strong>Análise e Desenvolvimento de Sistemas</strong> na Faculdade <strong>Cruzeiro do Sul Virtual</strong>, me aprimorando em cursos externos e obtendo mais conhecimento sobre a area do Desenvolvimento Front-end, porém, pretendo futuramente me tornar um desenvolvedor Full-stack, onde também me identifico atuando. Não pretendo parar meu aprendizado aí, até porque, a área do Desenvolvimento front-end, Full-stack, back-end e outras, necessitam de estudos constantes de acordo a evolução e surgimento de tecnologias. Dito isto, pretendo me aprimorar nas linguagens de uso diário, como em novas para meu desenvolvimento pessoal e profissional, sendo ele na web ou não.
+                    Prazer, me chamo Juan Souza e sou um <strong>Desenvolvedor Front-end</strong>. Atualmente sou graduando em <strong>Análise e Desenvolvimento de Sistemas</strong> na Faculdade <strong>Cruzeiro do Sul Virtual</strong>. Atualmente trabalho como Assistente Adminstrativo e estou em transição de carreira para a area de desenvolvimento.
                 </p>
         </section>
 
@@ -54,7 +54,7 @@
             <div class="img__tecnologias">
                 <img class="imagem" src="/imagens/logo-html.png" alt="Logo HTML" width="100px" >
                 <img class="imagem" src="/imagens/logo-css.png" alt="Logo CSS" width="72px" >
-                <img class="imagem" src="/imagens/logo-js.png" alt="Logo Javascript" width="90px" >
+                <img class="imagem" src="/imagens/logo-js.png" alt="Logo Javascript" width="100px" >
                 <img class="imagem" src="/imagens/logo-react.png" alt="Logo React" width="100px">
                 <img class="imagem" src="/imagens/logo-mysql.png" alt="Logo MySQL" width="100px">
             </div>
@@ -75,10 +75,44 @@
 
     <footer class="rodape">
 
-        <input class="rodape__contate__botao" type="button" value="Contate-me">
+        <input id="contateBtn" class="rodape__contate__botao" type="button" value="Contate-me">
 
-        <section class="rodape__contate"></section>
+        <input id="fecharContateBtn" type="button" value="Fechar" class="rodape__contate__botao" >
+
+        <section class="rodape__contate">
+
+            <form class="form__contato">
+
+                <div class="div__contato">
+                    <input type="email" class="contato__email" placeholder="E-mail de contato">
+
+                    <input type="text" id="assunto" maxlength="30" placeholder="Assunto" class="contato__assunto">
+    
+                    <textarea id="descricao" cols="30" rows="10" placeholder="Descrição" class="contato__desc"></textarea>
+
+                    <input type="submit" value="Enviar" class="contato__botao">
+                    <!-- Não envia para lugar algum -->
+                </div>
+
+                <div class="div__contatos">
+                    <ul class="lista__contatos">
+                        
+                        <li class="contato">
+                            <str>WhatsApp:</str> (21) 97491-2470
+                        </li>
+                        <li class="contato">
+                            <str>E-mail:</str> juanvictor513@gmail.com
+                        </li>
+                        
+                    </ul>
+                </div>
+
+            </form>
+
+        </section>
 
     </footer>
+
+    <script src="/JS/main.js"></script>
 </body>
 </html>
